@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!---Shadow -->
+
+
+    <!-- Right Shadow -->
+    <item android:id="@+id/shadow">
+        <rotate android:visible="true">
+            <shape android:shape="rectangle">
+                <solid android:color="#11A2A2A2"/>
+                <corners android:topRightRadius="40dp"
+                         android:topLeftRadius="40dp"
+                />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Right  -->
+    <item android:id="@+id/right" android:left="150dp" android:top="5dp" android:right="5dp">
+        <rotate android:visible="true">
+            <shape android:shape="rectangle">
+                <solid android:color="#FDFDFD"/>
+                <corners
+                        android:topRightRadius="40dp"
+                />
+            </shape>
+        </rotate>
+    </item>
+    <!-- Left  -->
+    <item android:id="@+id/left" android:right="150dp" android:top="5dp" android:left="5dp">
+        <rotate android:visible="true"
+                android:pivotX="50%"
+                android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <solid android:color="#FDFDFD"/>
+                <corners
+                        android:topLeftRadius="40dp"
+                />
+            </shape>
+        </rotate>
+    </item>
+    <!-- Bottom  -->
+    <item
+            android:right="50dp"
+            android:left="50dp">
+        <rotate
+                android:visible="true"
+                android:fromDegrees="180"
+                android:pivotX="50%"
+                android:pivotY="51.2%">
+            <shape android:shape="rectangle">
+                <solid android:color="#FFFFFF"/>
+            </shape>
+        </rotate>
+    </item>
+    <!-- Top  -->
+    <item
+            android:top="8.5dp"
+            android:right="50dp"
+            android:left="50dp">
+        <rotate
+                android:visible="true"
+                android:fromDegrees="180"
+                android:pivotX="50%"
+                android:pivotY="25%">
+            <shape android:shape="line">
+                <solid android:color="#fff"/>
+                <stroke android:width="7dp" android:color="#fff"/>
+            </shape>
+        </rotate>
+    </item>
+
+
+</layer-list>

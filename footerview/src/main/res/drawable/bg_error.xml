@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools">
+
+    <item tools:ignore="StateListReachable"
+          android:right="15dp"
+          android:left="15dp"
+          android:top="15dp"
+          android:bottom="15dp"
+          android:width="96dp"
+          android:height="96dp"
+    >
+        <rotate android:pivotX="50%"
+                android:pivotY="50%" android:fromDegrees="180">
+            <shape android:shape="oval"
+                   android:thickness="0dp"
+                   android:innerRadiusRatio="2.5"
+                   android:useLevel="false"
+            >
+                <stroke android:color="#A0A0A0"
+                        android:width="1.5dp"
+                        android:dashGap="2dp"
+                        android:dashWidth="5dp"
+
+                />
+            </shape>
+        </rotate>
+    </item>
+    <item tools:ignore="StateListReachable"
+    >
+        <rotate android:pivotX="50%"
+                android:pivotY="50%" android:fromDegrees="180">
+            <shape android:shape="oval"
+                   android:thickness="0dp"
+                   android:innerRadiusRatio="2.3"
+                   android:useLevel="false"
+            >
+                <stroke android:color="#666666"
+                        android:width="3dp"
+                        android:dashGap="30dp"
+                        android:dashWidth="60dp"
+
+                />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
